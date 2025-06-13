@@ -17,7 +17,7 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.HOST_SSH_KEY }}
           source: "."
-          target: "/home/ec2-user/my-node-app-staging"
+          target: "/home/iyanu/my-node-app-staging"
       - name: Restart on EC2
         uses: appleboy/ssh-action@master
         with:
